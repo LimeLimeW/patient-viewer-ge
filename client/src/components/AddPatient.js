@@ -32,8 +32,8 @@ export default function AddPatient({ setPatient }) {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify(patient)
-        }).then(data => console.log(data))
-          .then(data => data.json())
+        })
+        .then(data => data.json())
        }
 
   return(

@@ -6,7 +6,6 @@ import AddPatient from './components/AddPatient'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Cookies from "js-cookie"
 import List from './components/List';
-import Addpatient from './components/AddPatient';
 
 function setToken(userToken) {
   Cookies.set('token', userToken);

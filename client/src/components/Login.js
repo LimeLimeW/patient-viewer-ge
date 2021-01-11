@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import './Login.css';
 import PropTypes from 'prop-types';
-import { useHistory } from "react-router-dom";
 
 export default function Login({ setToken }) {
     const [username, setUserName] = useState();
     const [password, setPassword] = useState();
-    const history = useHistory();
 
     const handleSubmit = async e => {
         e.preventDefault();
@@ -27,7 +25,6 @@ export default function Login({ setToken }) {
           body: JSON.stringify(credentials)
         })
           .then(data => data.json())
-          
        }
 
   return(
